@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Wreyou Construction Company",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/Logo.png",
         width: 1200,
         height: 630,
         alt: "Wreyou Construction Company",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Wreyou Construction Company | Building Excellence. Delivering Trust.",
     description:
       "Liberian-owned construction and civil engineering firm delivering schools, clinics, roads, bridges and public buildings across Liberia since 2016.",
-    images: ["/og-image.jpg"],
+    images: ["/Logo.png"],
   },
   robots: {
     index: true,
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "/Logo.png",
+    shortcut: "/Logo.png",
+    apple: "/Logo.png",
   },
 };
 
