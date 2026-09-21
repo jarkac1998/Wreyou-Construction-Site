@@ -15,8 +15,60 @@ const bodyFont = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Wreyou Construction Company | Building Excellence. Delivering Trust.",
-  description: "Liberian-owned construction and civil engineering firm delivering schools, clinics, roads, bridges and public buildings across Liberia since 2016.",
+  metadataBase: new URL("https://wreyouconst.com"),
+  title: {
+    default: "Wreyou Construction Company | Building Excellence. Delivering Trust.",
+    template: "%s | Wreyou Construction Company",
+  },
+  description:
+    "Liberian-owned construction and civil engineering firm delivering schools, clinics, roads, bridges and public buildings across Liberia since 2016.",
+  keywords: [
+    "Wreyou Construction",
+    "construction company Liberia",
+    "civil engineering Liberia",
+    "roads and bridges Liberia",
+    "building contractor Monrovia",
+  ],
+  authors: [{ name: "Wreyou Construction Company" }],
+  openGraph: {
+    title: "Wreyou Construction Company | Building Excellence. Delivering Trust.",
+    description:
+      "Liberian-owned construction and civil engineering firm delivering schools, clinics, roads, bridges and public buildings across Liberia since 2016.",
+    url: "https://wreyouconst.com",
+    siteName: "Wreyou Construction Company",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Wreyou Construction Company",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wreyou Construction Company | Building Excellence. Delivering Trust.",
+    description:
+      "Liberian-owned construction and civil engineering firm delivering schools, clinics, roads, bridges and public buildings across Liberia since 2016.",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
