@@ -17,7 +17,8 @@ const bodyFont = IBM_Plex_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wreyouconst.com"),
   title: {
-    default: "Wreyou Construction Company | Building Excellence. Delivering Trust.",
+    default:
+      "Wreyou Construction Company | Building Excellence. Delivering Trust.",
     template: "%s | Wreyou Construction Company",
   },
   description:
@@ -31,7 +32,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Wreyou Construction Company" }],
   openGraph: {
-    title: "Wreyou Construction Company | Building Excellence. Delivering Trust.",
+    title:
+      "Wreyou Construction Company | Building Excellence. Delivering Trust.",
     description:
       "Liberian-owned construction and civil engineering firm delivering schools, clinics, roads, bridges and public buildings across Liberia since 2016.",
     url: "https://wreyouconst.com",
@@ -49,7 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wreyou Construction Company | Building Excellence. Delivering Trust.",
+    title:
+      "Wreyou Construction Company | Building Excellence. Delivering Trust.",
     description:
       "Liberian-owned construction and civil engineering firm delivering schools, clinics, roads, bridges and public buildings across Liberia since 2016.",
     images: ["/Logo.png"],
@@ -71,10 +74,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${displayFont.variable} ${bodyFont.variable}`}>{children}</body>
+      <body className={`${displayFont.variable} ${bodyFont.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
